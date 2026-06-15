@@ -1,10 +1,10 @@
-# PRD Reviewer — WorkBuddy Skill
+# PRD Reviewer
 
-A WorkBuddy skill for automated Product Requirements Document (PRD) review and evaluation, based on Uber's First-Pass PRD Evaluator methodology.
+An automated Product Requirements Document (PRD) review and evaluation framework, based on Uber's First-Pass PRD Evaluator methodology.
 
 ## Overview
 
-This skill provides structured, actionable PRD reviews across **6 core evaluation dimensions**:
+This framework provides structured, actionable PRD reviews across **6 core evaluation dimensions**:
 
 | Dimension | Focus Area |
 |-----------|------------|
@@ -17,56 +17,44 @@ This skill provides structured, actionable PRD reviews across **6 core evaluatio
 
 ## Features
 
-- **4-tier review depth** — automatically classifies PRD as Light / Medium / Full / Specialized Deep
+- **4-tier review depth** — classifies PRD as Light / Medium / Full / Specialized Deep
 - **7 anti-pattern detection** — catches unsupported assumptions, cross-system blind spots, unexamined second-order effects, and more
 - **Structured output** — Launch readiness rating → dimension scorecard → detailed findings & fix suggestions → prioritized action items
 - **Actionable feedback** — every finding comes with a concrete fix suggestion, not vague criticism
 
-## Installation
-
-### Option 1: Install from zip (WorkBuddy Desktop)
-
-1. Download `prd-reviewer.zip` from the [Releases](../../releases) page
-2. Open WorkBuddy → Settings → Skills
-3. Click "Import Skill" and select the zip file
-
-### Option 2: Manual install
-
-```bash
-# Clone into WorkBuddy skills directory
-git clone https://github.com/SermierSu/prd-reviewer.git ~/.workbuddy/skills/prd-reviewer
-```
-
-Restart WorkBuddy and the skill will be automatically loaded.
-
 ## Usage
 
-Once installed, trigger the skill by saying:
+### As a WorkBuddy Skill
 
-- "评审这个PRD"
-- "帮我评审需求文档"
-- "review this PRD"
-- "评估这个需求"
+This repository is packaged as a [WorkBuddy](https://www.codebuddy.cn) skill for AI-assisted automated review.
 
-Then paste or upload your PRD document. The skill will:
+1. Download `prd-reviewer.zip` from the [Releases](../../releases) page
+2. Open WorkBuddy → Settings → Skills → Import Skill
+3. Trigger by saying: "评审这个PRD", "review this PRD", "评估这个需求"
 
-1. Classify the PRD review depth
-2. Evaluate across all 6 dimensions
-3. Detect common anti-patterns
-4. Output a structured review with prioritized action items
+### Manual / Framework Usage
 
-## Skill Structure
+The core evaluation framework is also available as standalone reference documentation. See [`references/prd-review-framework.md`](references/prd-review-framework.md) for the complete checklist, anti-pattern catalog, and output templates. You can use this directly for manual PRD review or integrate it into your own tooling.
+
+```bash
+# Clone for manual use or integration
+git clone https://github.com/SermierSu/prd-reviewer.git
+```
+
+## Repository Structure
 
 ```
 prd-reviewer/
-├── SKILL.md                           # Core workflow instructions
-└── references/
-    └── prd-review-framework.md        # Complete evaluation framework
+├── SKILL.md                           # AI agent workflow instructions
+├── references/
+│   └── prd-review-framework.md        # Complete evaluation framework
+├── README.md                          # This file
+└── README.zh-CN.md                    # Chinese version
 ```
 
 ## Methodology
 
-This skill is based on Uber's "First-Pass PRD Evaluator" framework, adapted for automated AI-assisted review. The goal is to make human review more focused and efficient, not to replace human judgment.
+This framework is based on Uber's "First-Pass PRD Evaluator" methodology, adapted for both automated AI-assisted review and manual evaluation. The goal is to make human review more focused and efficient, not to replace human judgment.
 
 ## License
 
@@ -74,4 +62,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Related
 
-- [prd-writer](https://github.com/SermierSu/prd-writer) — The companion skill for writing PRDs using the 8-section template
+- [prd-writer](https://github.com/SermierSu/prd-writer) — The companion project for writing PRDs using the 8-section template
