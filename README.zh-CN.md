@@ -24,13 +24,8 @@
 
 ## 使用方式
 
-### 作为 WorkBuddy 技能
-
-本仓库已打包为 [WorkBuddy](https://www.codebuddy.cn) 技能，支持 AI 辅助自动化评审。
-
-1. 从 [Releases](../../releases) 页面下载 `prd-reviewer.zip`
-2. 打开 WorkBuddy → 设置 → 技能 → 导入技能
-3. 通过以下话术触发："评审这个PRD"、"review this PRD"、"评估这个需求"
+1. 复制仓库链接，然后使用任意AI工具让它帮你创建这个skill
+2. 通过以下话术触发："评审这个PRD"、"review this PRD"、"评估这个需求"
 
 ### 手动使用 / 框架参考
 
@@ -54,12 +49,9 @@ prd-reviewer/
 
 ## 方法论
 
-本框架基于 Uber 的 "First-Pass PRD Evaluator" 方法论，同时适配了自动化 AI 辅助评审和人工评审两种场景。目标是让后续的人工评审更加聚焦和高效，而非取代人类判断。
+本框架基于 Uber 的 "First-Pass PRD Evaluator" 方法论（https://www.uber.com/us/en/blog/first-pass-prd/），同时适配了自动化 AI 辅助评审和人工评审两种场景。目标是让后续的人工评审更加聚焦和高效，而非取代人类判断。
 
 ## 许可证
 
 MIT 许可证 — 详见 [LICENSE](LICENSE)。
 
-## 相关项目
-
-- [prd-writer](https://github.com/SermierSu/prd-writer) — 配套项目，使用 8 节模板编写 PRD

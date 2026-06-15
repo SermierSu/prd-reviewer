@@ -8,12 +8,12 @@ This framework provides structured, actionable PRD reviews across **6 core evalu
 
 | Dimension | Focus Area |
 |-----------|------------|
-| 机会与假设 (Opportunity & Assumptions) | Problem clarity, assumption validation, success definition |
-| 产品范围 (Product Scope) | Solution clarity, scope boundaries, decision-readiness |
-| 用户体验与影响 (UX & Impact) | User segments, edge cases, regional/accessibility considerations |
-| 指标与数据严谨性 (Metrics & Data Rigor) | Success metrics, guardrail metrics, measurement plan |
-| 关联影响与上下文 (Cross-Functional Impact) | Cross-system impact, partner concerns, second-order effects |
-| 决策逻辑与优先级 (Decision Logic) | Trade-offs, rationale, alternatives, risk mitigation |
+| Opportunity & Assumptions | Problem clarity, assumption validation, success definition |
+| Product Scope | Solution clarity, scope boundaries, decision-readiness |
+| UX & Impact | User segments, edge cases, regional/accessibility considerations |
+| Metrics & Data Rigor | Success metrics, guardrail metrics, measurement plan |
+| Cross-Functional Impact | Cross-system impact, partner concerns, second-order effects |
+| Decision Logic | Trade-offs, rationale, alternatives, risk mitigation |
 
 ## Features
 
@@ -24,13 +24,8 @@ This framework provides structured, actionable PRD reviews across **6 core evalu
 
 ## Usage
 
-### As a WorkBuddy Skill
-
-This repository is packaged as a [WorkBuddy](https://www.codebuddy.cn) skill for AI-assisted automated review.
-
-1. Download `prd-reviewer.zip` from the [Releases](../../releases) page
-2. Open WorkBuddy → Settings → Skills → Import Skill
-3. Trigger by saying: "评审这个PRD", "review this PRD", "评估这个需求"
+2. Copy the repository link, and then use any AI tool to help you create a skill.
+3. Trigger by saying: "Review this PRD",  "Evaluate this requirement"
 
 ### Manual / Framework Usage
 
@@ -54,12 +49,8 @@ prd-reviewer/
 
 ## Methodology
 
-This framework is based on Uber's "First-Pass PRD Evaluator" methodology, adapted for both automated AI-assisted review and manual evaluation. The goal is to make human review more focused and efficient, not to replace human judgment.
+This framework is based on Uber's "First-Pass PRD Evaluator" methodology(https://www.uber.com/us/en/blog/first-pass-prd/), adapted for both automated AI-assisted review and manual evaluation. The goal is to make human review more focused and efficient, not to replace human judgment.
 
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
-
-## Related
-
-- [prd-writer](https://github.com/SermierSu/prd-writer) — The companion project for writing PRDs using the 8-section template
